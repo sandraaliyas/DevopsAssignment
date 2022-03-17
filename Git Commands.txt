@@ -1,0 +1,71 @@
+git init - This command is used to start a new repository or reinitalize the existing repository
+git config --global user.name "joshipar" - This commands sets the
+author name whenever you commit the code
+git config --global user.email "parag.joshi@hematitecorp.com" - This
+commands sets the author email whenever you commit the code
+git config --list - It will list down all the config elements
+git status - It will tell the status of file to be committed on git
+repository
+git add <filename> - It will add specific file to staging area
+git add * - It will add all files and subfolders to the staging area
+git add . - It will add all new and modified files to the staging area
+git add -A - It wil add all new and modified files to the staging
+aread
+git rm --cached <filename> - It will unstage the file
+git rm --cached <filename> -f - If staging area file and the unstaged
+file is different and you still want to unstage you have to use the -f
+(Force) option
+git commit -m "Initial version of file" - It is used to commit the
+files to the git repository , -m option is to set the message for the
+commit
+git commit - It will commit the file and the editor will be opened
+where you should be putting the message for the commit
+git log - It will show the list of all commit logs
+git diff - The command shows the file differences which are not yet
+staged and the last commited files
+git diff --staged - This command show the differences between the
+files in the staging area and the latest version present
+git restore --staged <filename> - It will unstaged the files from
+staging area
+git show - will show the entire commit log for each files
+git log --stat - It will display a list of files with additions and
+deletions
+git log --pretty=oneline - It will give the formated output of log in
+oneline
+git log --pretty --format=short
+git log --pretty --format=med
+git log --pretty --format=full
+git log --pretty --format=fuller
+git log --pretty --format=email
+git log --pretty --format=raw
+git reset <commit> - Command will undo all the commits till the
+specified commit id and preserves the changes locally
+git ls-file - It will list down all the file names which are commited
+git reset --hard <commit> - Command discards all history and goes back
+to specified commit, files locally will be overridden
+git remote add origin <repository url> - This will connect remote
+repository with local repository
+git remote -v - It will list down all the remote repositories
+attached.
+git push -u origin master - The data is pushed to remote repository
+from local repository
+git pull origin master - The data is pulled from remote repository to
+local repository
+git clone "<github project url>" - It will copy the entire github
+project on your machine
+Branching:
+Git branches are nothing but pointers to a specific commit.
+There are 2 types of branches
+1. Local - It is typically an another path of your current working
+tree
+2. Remote tracking - They are having some special purposes (for eg:
+The link which we work from the local repository to work on central
+repository)
+git branch - It is used to list all branches
+git branch <branch name> - It will create a branch with the given
+branch name with the latest commited files
+git checkout <branchname> - It will checkout to the specific branch
+git merge <brancname> - It will merge the specified branch to another
+branch
+git branch -d <branchname> - It will delete the branch name from the
+git repository
